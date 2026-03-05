@@ -1,0 +1,933 @@
+﻿<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rich Enterprise - Freelancer Website & Portofolio</title>
+
+  <meta name="description"
+    content="Jasa pembuatan website profesional oleh Rich Enterprise, seorang freelancer berpengalaman. Lihat portofolio dan hubungi untuk proyek Anda." />
+  <meta name="keywords" content="freelancer website, jasa website, rich enterprise, portofolio web, web developer" />
+  <meta name="author" content="Rich Enterprise" />
+  <link rel="canonical" href="https://richenterprise.vercel.app/" />
+
+  <meta property="og:title" content="Rich Enterprise - Freelancer Website & Portofolio" />
+  <meta property="og:description"
+    content="Jasa pembuatan website profesional oleh Rich Enterprise. Lihat portofolio dan hubungi untuk proyek Anda." />
+  <meta property="og:image" content="https://richenterprise.vercel.app/assets/imagemebanner.jpeg" />
+  <meta property="og:url" content="https://richenterprise.vercel.app/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rich Enterprise - Freelancer Website & Portofolio" />
+  <meta name="twitter:description"
+    content="Jasa pembuatan website profesional oleh Rich Enterprise. Lihat portofolio dan hubungi untuk proyek Anda." />
+  <meta name="twitter:image" content="https://richenterprise.vercel.app/assets/imagemebanner.jpeg" />
+
+  <link rel="shortcut icon" href="file:///C:/Kerja%20Richard/Website/Web%20Profil/Favicon.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <meta name="google-site-verification" content="Yq9Ve1yRDlgeoT1yUQveb9FDO0oNNY0C4biHDtpK3Oo" />
+</head>
+
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="./" class="logo">
+        <span class="logo-name">Rich Enterprise <span class="logo-sep">|</span> <span
+            class="logo-sub">Freelancer</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nm">Home</a>
+        <a href="#about" class="nm">Tentang</a>
+        <a href="#why" class="nm">Kenapa</a>
+        <a href="#layanan" class="nm">Layanan</a>
+        <a href="#portfolio" class="nm">Portfolio</a>
+        <a href="#cta" class="nm">Kontak Kami</a>
+      </nav>
+
+      <a href="https://wa.me/6281389888577?text=Halo%20kak,%20saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20layanan%20jasa%20website%20kakak."
+        class="nav-cta" target="_blank"> <i class="bi bi-whatsapp"></i> Konsultasi </a>
+
+      <button class="burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer">
+    <div class="drawer-head">
+      <span class="drawer-brand">Rich Enterprise</span>
+      <button class="drawer-close" id="drawerClose" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#home" class="dl"><i class="bi bi-house"></i>Home</a>
+      <a href="#about" class="dl"><i class="bi bi-person"></i>Tentang Saya</a>
+      <a href="#why" class="dl"><i class="bi bi-star"></i>Kenapa</a>
+      <a href="#layanan" class="dl"><i class="bi bi-grid"></i>Layanan</a>
+      <a href="#portfolio" class="dl"><i class="bi bi-code-slash"></i>Portfolio</a>
+      <a href="#cta" class="dl"><i class="bi bi-telephone"></i>Kontak Kami</a>
+    </nav>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-decor">
+      <div class="decor-circle dc-1"></div>
+      <div class="decor-circle dc-2"></div>
+      <div class="decor-dots"></div>
+    </div>
+
+    <div class="hero-wrap">
+      <div class="hero-text">
+        <div class="hero-badge" data-reveal>
+          <span class="badge-pulse"></span>
+          Personal, UMKM & Corporate
+        </div>
+
+        <h1 class="hero-h1" data-reveal>
+          Wujudkan<br />
+          <em>Website Impian</em><br />
+          Bisnis Anda
+        </h1>
+
+        <p class="hero-lead" data-reveal>Siap Membangun Website Profesional & Performa Tinggi</p>
+        <p class="hero-desc" data-reveal>Sebagai Web Designer Expert, saya di sini untuk membantu Anda mewujudkan
+          presensi online yang kuat, modern, dan scalable dengan standar industri terbaik.</p>
+
+        <div class="hero-actions" data-reveal>
+          <a href="#layanan" class="btn-primary"> Lihat Layanan <i class="bi bi-arrow-right"></i> </a>
+          <a href="#about" class="btn-outline">Tentang Saya</a>
+        </div>
+
+        <!-- Tech -->
+        <div class="hero-tech" data-reveal>
+          <span class="tech-label">Tech:</span>
+          <span class="tech-chip">HTML</span>
+          <span class="tech-chip">CSS</span>
+          <span class="tech-chip">JavaScript</span>
+          <span class="tech-chip">Bootstrap</span>
+          <span class="tech-chip">Claude</span>
+          <span class="tech-chip">ChatGPT</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-ind">
+    </div>
+  </section>
+  <!-- Hero Section -->
+
+  <!-- Tentang Section  -->
+  <section class="about" id="about">
+    <canvas id="bg-canvas"></canvas>
+    <div class="section-wrap" style="position: relative; z-index: 2;">
+      <div class="sec-eyebrow" data-reveal>Tentang Saya</div>
+
+      <div class="about-grid">
+        <div class="about-visual" data-reveal>
+          <div class="about-photo-wrap">
+            <img
+              src="file:///C:/Kerja%20Richard/Website/Web%20Profil/Gemini_Generated_Image_4jlnwl4jlnwl4jln%20%281%29.png"
+              alt="Tentang Richard" class="about-photo new-richard-photo"
+              onerror="this.parentElement.classList.add('img-fallback')" />
+            <div class="about-badge-float"><span class="live-dot"></span>Aktif</div>
+          </div>
+
+          <!-- Info -->
+          <div class="about-chips">
+            <div class="achip">
+              <i class="bi bi-geo-alt-fill"></i>
+              Jakarta, Indonesia
+            </div>
+            <div class="achip">
+              <i class="bi bi-code-slash"></i>
+              Front-End Developer
+            </div>
+            <div class="achip">
+              <i class="bi bi-code-slash"></i>
+              Vibe Code
+            </div>
+            <div class="achip">
+              <i class="bi bi-code-slash"></i>
+              Freelance Website
+            </div>
+          </div>
+        </div>
+
+        <!-- Teks -->
+        <div class="about-content">
+          <h2 class="about-h2" data-reveal>
+            Halo! Saya <span class="text-accent">Richard</span>,<br />
+            Professional Web Designer.
+          </h2>
+
+          <!-- Teks -->
+          <p class="about-lead" data-reveal>Dengan pengalaman solid di dunia web engineering, saya mendedikasikan diri
+            untuk merancang dan mengembangkan antarmuka digital end-to-end. Memadukan estetika desain dengan efektivitas
+            kode demi hasil yang maksimal.</p>
+          <p class="about-body" data-reveal>Pendekatan saya selalu berpusat pada User Experience (UX), memastikan setiap
+            pixel dan fungsionalitas disesuaikan untuk mengatasi tantangan bisnis Anda, menciptakan solusi yang elegan
+            dan berperforma tinggi.</p>
+
+          <!-- Skill -->
+          <div class="skills" data-reveal>
+            <div class="skill">
+              <div class="skill-meta"><span>HTML / CSS</span><span class="skill-pct">90%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" style="--w: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-meta"><span>JavaScript</span><span class="skill-pct">90%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" style="--w: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-meta"><span>Bootstrap</span><span class="skill-pct">90%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" style="--w: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-meta"><span>ChatGPT</span><span class="skill-pct">95%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" style="--w: 95%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-meta"><span>ClaudeAI</span><span class="skill-pct">99%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" style="--w: 99%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats -->
+          <div class="about-stats" data-reveal>
+            <div class="astat">
+              <strong>Kualitas</strong>
+              <span>Fokus pada Kualitas</span>
+            </div>
+            <div class="astat-line"></div>
+            <div class="astat">
+              <strong>Expert</strong>
+              <span>Penanganan cepat dan tepat</span>
+            </div>
+            <div class="astat-line"></div>
+            <div class="astat">
+              <strong>100%</strong>
+              <span>Dedikasi &amp; Komitmen </span>
+            </div>
+            <div class="astat-line"></div>
+            <div class="astat">
+              <strong>Single</strong>
+              <span>Developer</span>
+            </div>
+          </div>
+
+          <a href="#layanan" class="btn-primary" data-reveal> Lihat Layanan <i class="bi bi-arrow-right"></i> </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Tentang Section  -->
+
+  <!-- Kenapa Section -->
+  <section class="why" id="why">
+    <div class="section-wrap">
+      <div class="sec-eyebrow center" data-reveal>Kenapa Memilih Saya?</div>
+      <h2 class="sec-title center" data-reveal>Saya berkomitmen untuk memberikan hasil terbaik.</h2>
+      <p class="sec-sub center" data-reveal>Saya berkomitmen untuk memberikan hasil terbaik.</p>
+
+      <div class="why-grid">
+        <!-- Card 1 -->
+        <div class="why-card" data-reveal>
+          <div class="wcard-img-wrap">
+            <div class="wcard-img-fb"><i class="bi bi-code-slash"></i></div>
+          </div>
+          <h4>Kode Bersih &amp; Rapi</h4>
+          <p>Struktur kode yang rapi dan teroptimasi, memastikan performa stabil serta kemudahan pengembangan di masa
+            depan.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="why-card" data-reveal>
+          <div class="wcard-img-wrap">
+            <div class="wcard-img-fb"><i class="bi bi-phone"></i></div>
+          </div>
+          <h4>Responsif Semua Perangkat</h4>
+          <p>Desain adaptif yang tampil menawan dan berfungsi optimal di berbagai ukuran layar, dari smartphone hingga
+            komputer desktop.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="why-card" data-reveal>
+          <div class="wcard-img-wrap">
+            <div class="wcard-img-fb"><i class="bi bi-clock-history"></i></div>
+          </div>
+          <h4>Proses Cepat</h4>
+          <p>Pengerjaan website dijamin cepat dan efisien tanpa mengurangi kualitas dan detail desain yang diinginkan.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="why-card" data-reveal>
+          <div class="wcard-img-wrap">
+            <div class="wcard-img-fb"><i class="bi bi-lightning-charge"></i></div>
+          </div>
+          <h4>Loading Super Cepat</h4>
+          <p>Pengoptimalan kecepatan akses halaman agar pengunjung mendapatkan pengalaman browsing yang instan dan
+            menyenangkan.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="why-card" data-reveal>
+          <div class="wcard-img-wrap">
+            <div class="wcard-img-fb"><i class="bi bi-wallet2"></i></div>
+          </div>
+          <h4>Harga Bersahabat</h4>
+          <p>Solusi website berkualitas tinggi dengan biaya investasi yang terjangkau, dirancang khusus untuk memenuhi
+            anggaran bisnis Anda.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="why-card" data-reveal>
+          <div class="wcard-img-wrap">
+            <div class="wcard-img-fb"><i class="bi bi-arrow-repeat"></i></div>
+          </div>
+          <h4>Revisi Sampai Puas</h4>
+          <p>Kami berkomitmen memberikan penyesuaian desain hingga penyesuaian hasil akhirnya benar-benar sesuai dengan
+            ekspektasi Anda.</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="why-card" data-reveal>
+          <div class="wcard-img-wrap">
+            <div class="wcard-img-fb"><i class="bi bi-file-earmark-text"></i></div>
+          </div>
+          <h4>Kontrol &amp; Kelola Konten</h4>
+          <p>Pembaruan isi website ditangani oleh tim ahli, sehingga keamanan data dan arsitektur database selalu handal
+            dan terawat.</p>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="why-card" data-reveal>
+          <div class="wcard-img-wrap">
+            <div class="wcard-img-fb"><i class="bi bi-key"></i></div>
+          </div>
+          <h4>Hak Milik Penuh Source Code</h4>
+          <p>Anda memegang kendali penuh atas kode sumber website. Silakan simpan, kembangkan, atau pindahkan tanpa
+            kendala.</p>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="why-card" data-reveal>
+          <div class="wcard-img-wrap">
+            <div class="wcard-img-fb"><i class="bi bi-lightbulb"></i></div>
+          </div>
+          <h4>Teknologi Ringan &amp; Modern</h4>
+          <p>Memanfaatkan susunan sistem terbaru yang efisien, menjadikan website Anda tangguh dan relevan mengikuti
+            standar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Kenapa Section -->
+
+  <!-- Layanan Section -->
+  <section class="layanan" id="layanan">
+    <div class="section-wrap">
+      <div class="sec-eyebrow" data-reveal>Layanan</div>
+      <h2 class="sec-title" data-reveal>Apa yang bisa saya buatkan?</h2>
+      <p class="sec-sub" data-reveal>Pilih kategori layanan untuk melihat paket yang tersedia.</p>
+
+      <!-- Layanan Kami -->
+      <div class="tabs-row" data-reveal>
+        <button class="tab-btn active" data-tab="landing">
+          <i class="bi bi-layout-text-window-reverse tab-icon-fb"></i>
+          Landing Page
+        </button>
+        <button class="tab-btn" data-tab="company">
+          <i class="bi bi-building tab-icon-fb"></i>
+          Company Profile
+        </button>
+        <button class="tab-btn" data-tab="travel">
+          <i class="bi bi-compass tab-icon-fb"></i>
+          Website Travel
+        </button>
+        <button class="tab-btn" data-tab="ecommerce">
+          <i class="bi bi-bag-heart tab-icon-fb"></i>
+          Katalog / E-Commerce
+        </button>
+      </div>
+
+      <!-- Layanan Rich Enterprise -->
+      <div class="panels-wrap">
+        <!--  LANDING  -->
+        <div class="panel active" id="panel-landing">
+          <div class="panel-head" data-reveal>
+            <div class="panel-icon-wrap">
+              <div class="panel-icon-fb"><i class="bi bi-layout-text-window-reverse"></i></div>
+            </div>
+            <div>
+              <h3>Landing Page</h3>
+              <p>Landing page yang dirancang khusus untuk mengubah pengunjung menjadi pelanggan. Maksimalkan promosi
+                produk, event, atau campaign Anda dengan strategi konversi yang terbukti efektif.</p>
+            </div>
+          </div>
+          <div class="pkgs">
+            <div class="pkg" data-reveal>
+              <span class="pkg-label">Basic Plan</span>
+              <h4>Landing Page Starter</h4>
+              <div class="pkg-price"><strong>Rp 1.000.000</strong><span>/project</span></div>
+              <ul class="feat-list">
+                <li><i class="bi bi-check-circle-fill"></i>1 Halaman Landing Page (Responsif)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free Copywriting</li>
+                <li><i class="bi bi-check-circle-fill"></i>Desain Simpel & Menarik</li>
+                <li><i class="bi bi-check-circle-fill"></i>Source Code 100% Hak Milik</li>
+                <li><i class="bi bi-check-circle-fill"></i>CTA Integrasi WhatsApp Chat</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free SSL</li>
+                <li><i class="bi bi-check-circle-fill"></i>Garansi Maitenance 1 Bulan</li>
+                <li><i class="bi bi-check-circle-fill"></i>Optimasi Kecepatan (Lazy Load + Caching Tools)</li>
+
+                <p class="note-order">
+                  <span class="note-title">Catatan :</span>
+                  Website ini dikembangkan secara custom tanpa menggunakan CMS demi memastikan keamanan dan performa
+                  yang optimal. Seluruh pembaruan konten dikelola langsung oleh developer untuk menjaga kualitas dan
+                  stabilitas sistem.
+                </p>
+              </ul>
+
+              <a href="https://wa.me/6281389888577?text=Halo%20Richard,%20saya%20tertarik%20Landing%20Page%20Basic"
+                class="pkg-btn mt-3"> Pesan Sekarang <i class="bi bi-arrow-right"></i> </a>
+            </div>
+            <div class="pkg pkg-featured" data-reveal>
+              <span class="pkg-label popular">Gold Plan ✦</span>
+              <h4>Landing Page Gold</h4>
+              <div class="pkg-price"><strong>Rp 1.500.000</strong><span>/project</span></div>
+              <ul class="feat-list">
+                <li><i class="bi bi-check-circle-fill"></i>1 Halaman + Animasi Scroll (Responsif)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free Copywriting</li>
+                <li><i class="bi bi-check-circle-fill"></i>Desain Visual Lebih Kompleks (CTA, Form, Galeri)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free Domain</li>
+                <li><i class="bi bi-check-circle-fill"></i>Source Code 100% Hak Milik</li>
+                <li><i class="bi bi-check-circle-fill"></i>CTA Integrasi WhatsApp Chat</li>
+                <li><i class="bi bi-check-circle-fill"></i>Form Kontak Integrasi WhatsApp Chat</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free SSL</li>
+                <li><i class="bi bi-check-circle-fill"></i>Garansi Maitenance 1,5 Bulan</li>
+                <li><i class="bi bi-check-circle-fill"></i>Garansi Team Kelola Konten Website</li>
+                <li><i class="bi bi-check-circle-fill"></i>Terdaftar di Google Search Console</li>
+                <li><i class="bi bi-check-circle-fill"></i>Optimasi Kecepatan (Lazy Load + Caching Tools)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Gratis Revisi Minor (Kecil)</li>
+                <li><i class="bi bi-check-circle-fill"></i>4x Revisi Mayor (Besar)</li>
+
+                <p class="note-order">
+                  <span class="note-title">Catatan :</span>
+                  Website ini dikembangkan secara custom tanpa menggunakan CMS demi memastikan keamanan dan performa
+                  yang optimal. Seluruh pembaruan konten dikelola langsung oleh developer untuk menjaga kualitas dan
+                  stabilitas sistem.
+                </p>
+              </ul>
+
+              <a href="https://wa.me/6281389888577?text=Halo%20Richard,%20saya%20tertarik%20Landing%20Page%20Gold"
+                class="pkg-btn featured"> Pesan Sekarang <i class="bi bi-arrow-right"></i> </a>
+            </div>
+          </div>
+        </div>
+
+        <!--  COMPANY  -->
+        <div class="panel" id="panel-company">
+          <div class="panel-head" data-reveal>
+            <div class="panel-icon-wrap">
+              <div class="panel-icon-fb"><i class="bi bi-building"></i></div>
+            </div>
+            <div>
+              <h3>Company Profile</h3>
+              <p>Halaman company profile yang lengkap dan elegan, menampilkan brand, layanan, dan visi bisnis dengan
+                cara yang profesional untuk menarik klien dan mitra potensial.</p>
+            </div>
+          </div>
+          <div class="pkgs">
+            <div class="pkg" data-reveal>
+              <span class="pkg-label">Standard</span>
+              <h4>Company Profile Standard</h4>
+              <div class="pkg-price"><strong>Rp 2.000.000</strong><span>/project</span></div>
+              <ul class="feat-list">
+                <li><i class="bi bi-check-circle-fill"></i>Desain Clean &amp; Premium (Responsif)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free Hosting 1 Tahun</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free Domain 1 Tahun</li>
+                <li><i class="bi bi-check-circle-fill"></i>5 Halaman (Home, About, Service, Portfolio/Clients, Contact,
+                  FAQ)</li>
+                <li><i class="bi bi-check-circle-fill"></i>CTA Integrasi WhatsApp Chat</li>
+                <li><i class="bi bi-check-circle-fill"></i>Form Kontak Integrasi WhatsApp Chat</li>
+                <li><i class="bi bi-check-circle-fill"></i>Google Maps Integrasi</li>
+                <li><i class="bi bi-check-circle-fill"></i>Source Code 100% Hak Milik</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free SSL</li>
+                <li><i class="bi bi-check-circle-fill"></i>SEO on-page basic</li>
+                <li><i class="bi bi-check-circle-fill"></i>Garansi Maitenance 1 Bulan</li>
+                <li><i class="bi bi-check-circle-fill"></i>Garansi Team Kelola Konten Website (Update Service +
+                  Portfolio/Clients)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Terdaftar di Google Search Console</li>
+                <li><i class="bi bi-check-circle-fill"></i>Kecepatan Website (Lazy Load + Caching Tools)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Gratis Revisi Minor (Kecil)</li>
+                <li><i class="bi bi-check-circle-fill"></i>4x Revisi Mayor (Besar)</li>
+
+                <p class="note-order">
+                  <span class="note-title">Catatan :</span>
+                  Website ini dikembangkan secara custom tanpa menggunakan CMS demi memastikan keamanan dan performa
+                  yang optimal. Seluruh pembaruan konten dikelola langsung oleh developer untuk menjaga kualitas dan
+                  stabilitas sistem.
+                </p>
+              </ul>
+
+              <a href="https://wa.me/6281389888577?text=Halo%20kak,%20saya%20tertarik%20Company%20Profile%20Standard"
+                class="pkg-btn"> Pesan Sekarang <i class="bi bi-arrow-right"></i> </a>
+            </div>
+
+            <!--  Coming Soon Paket 
+              <div class="pkg pkg-featured" data-reveal>
+                <span class="pkg-label popular">Premium ✦</span>
+                <h4>Company Profile Premium</h4>
+                <div class="pkg-price"><strong>Rp 5jt</strong><span>/project</span></div>
+                <ul class="feat-list">
+                  <li><i class="bi bi-check-circle-fill"></i>8+ halaman + blog</li>
+                  <li><i class="bi bi-check-circle-fill"></i>CMS kelola konten sendiri</li>
+                  <li><i class="bi bi-check-circle-fill"></i>Bilingual ID/EN</li>
+                  <li><i class="bi bi-check-circle-fill"></i>SEO advance + sitemap</li>
+                  <li><i class="bi bi-check-circle-fill"></i>Revisi unlimited</li>
+                  <li><i class="bi bi-check-circle-fill"></i>Selesai 14–21 hari</li>
+                </ul>
+                <a href="https://wa.me/6281234567890?text=Halo%20Richard,%20saya%20tertarik%20Company%20Profile%20Premium" class="pkg-btn featured"> Pesan Sekarang <i class="bi bi-arrow-right"></i> </a>
+              </div>
+              -->
+          </div>
+        </div>
+
+        <!-- TRAVEL -->
+        <div class="panel" id="panel-travel">
+          <div class="panel-head" data-reveal>
+            <div class="panel-icon-wrap">
+              <div class="panel-icon-fb"><i class="bi bi-compass"></i></div>
+            </div>
+            <div>
+              <h3>Website Travel</h3>
+              <p>Platform digital untuk agen wisata dengan katalog paket perjalanan lengkap serta fitur booking langsung
+                via WhatsApp untuk memudahkan konsultasi dan reservasi.</p>
+            </div>
+          </div>
+          <div class="pkgs">
+            <div class="pkg" data-reveal>
+              <span class="pkg-label">Basic Plan</span>
+              <h4>Travel Agency Basic</h4>
+              <div class="pkg-price"><strong>Rp 2.500.000</strong><span>/project</span></div>
+              <ul class="feat-list">
+                <li><i class="bi bi-check-circle-fill"></i>Desain Visual Kompleks (CTA, Form Kontak, Galeri)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free Hosting 1 Tahun</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free Domain 1 Tahun</li>
+                <li><i class="bi bi-check-circle-fill"></i>6-8 Halaman (Home, About, Tour Packages, Gallery, Blog,
+                  Contact, Testimonial)</li>
+                <li><i class="bi bi-check-circle-fill"></i>CTA Integrasi WhatsApp Chat</li>
+                <li><i class="bi bi-check-circle-fill"></i>Form Kontak Integrasi WhatsApp Chat</li>
+                <li><i class="bi bi-check-circle-fill"></i>Form Pemesanan Integrasi WhatsApp Chat</li>
+                <li><i class="bi bi-check-circle-fill"></i>Section Details untuk Tour Packages</li>
+                <li><i class="bi bi-check-circle-fill"></i>Google Maps Integrasi</li>
+                <li><i class="bi bi-check-circle-fill"></i>10 GB Disk Storage</li>
+                <li><i class="bi bi-check-circle-fill"></i>Source Code 100% Hak Milik</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free SSL</li>
+                <li><i class="bi bi-check-circle-fill"></i>SEO on-page basic</li>
+                <li><i class="bi bi-check-circle-fill"></i>Garansi Maitenance 20 Hari</li>
+                <li><i class="bi bi-check-circle-fill"></i>Garansi Team Kelola Konten Website (Update Paket + Blog)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Terdaftar di Google Search Console</li>
+                <li><i class="bi bi-check-circle-fill"></i>Kecepatan Website (Lazy Load + Caching Tools)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Gratis Revisi Minor (Kecil)</li>
+                <li><i class="bi bi-check-circle-fill"></i>5x Revisi Mayor (Besar)</li>
+
+                <p class="note-order">
+                  <span class="note-title">Catatan :</span>
+                  Website ini dikembangkan secara custom tanpa menggunakan CMS demi memastikan keamanan dan performa
+                  yang optimal. Seluruh pembaruan konten dikelola langsung oleh developer untuk menjaga kualitas dan
+                  stabilitas sistem.
+                </p>
+              </ul>
+
+              <a href="https://wa.me/6281389888577?text=Halo%20kak,%20saya%20tertarik%20Travel%20Basic" class="pkg-btn">
+                Pesan Sekarang <i class="bi bi-arrow-right"></i> </a>
+            </div>
+            <div class="pkg pkg-featured" data-reveal>
+              <span class="pkg-label popular">Gold Plan ✦</span>
+              <h4>Travel Agency Gold</h4>
+              <div class="pkg-price"><strong>Rp 3.000.000</strong><span>/project</span></div>
+              <ul class="feat-list">
+                <li><i class="bi bi-check-circle-fill"></i>Desain Visual Kompleks (CTA, Form Kontak, Galeri)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free Hosting 1 Tahun</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free Domain 1 Tahun</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free Konten Blog 6 SEO</li>
+                <li><i class="bi bi-check-circle-fill"></i>6-8 Halaman (Home, About, Tour Packages, Gallery, Blog,
+                  Contact, Testimonial)</li>
+                <li><i class="bi bi-check-circle-fill"></i>CTA Integrasi WhatsApp Chat</li>
+                <li><i class="bi bi-check-circle-fill"></i>Form Kontak Integrasi WhatsApp Chat</li>
+                <li><i class="bi bi-check-circle-fill"></i>Form Pemesanan Integrasi WhatsApp Chat</li>
+                <li><i class="bi bi-check-circle-fill"></i>Section Details untuk Tour Packages</li>
+                <li><i class="bi bi-check-circle-fill"></i>Google Maps Integrasi</li>
+                <li><i class="bi bi-check-circle-fill"></i>20 GB Disk Storage</li>
+                <li><i class="bi bi-check-circle-fill"></i>Source Code 100% Hak Milik</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free SSL</li>
+                <li><i class="bi bi-check-circle-fill"></i>SEO on-page basic</li>
+                <li><i class="bi bi-check-circle-fill"></i>Garansi Maitenance 1 Bulan</li>
+                <li><i class="bi bi-check-circle-fill"></i>Garansi Team Kelola Konten Website (Update Paket + Blog)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Terdaftar di Google Search Console</li>
+                <li><i class="bi bi-check-circle-fill"></i>Kecepatan Website (Lazy Load + Caching Tools)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Gratis Revisi Minor (Kecil)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Gratis Revisi Mayor (Unlimited)</li>
+
+                <p class="note-order">
+                  <span class="note-title">Catatan :</span>
+                  Website ini dikembangkan secara custom tanpa menggunakan CMS demi memastikan keamanan dan performa
+                  yang optimal. Seluruh pembaruan konten dikelola langsung oleh developer untuk menjaga kualitas dan
+                  stabilitas sistem.
+                </p>
+              </ul>
+              <a href="https://wa.me/6281389888577?text=Halo%20Kak,%20saya%20tertarik%20Travel%20Agency%20Gold"
+                class="pkg-btn featured"> Pesan Sekarang <i class="bi bi-arrow-right"></i> </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ECOMMERCE ── -->
+        <div class="panel" id="panel-ecommerce">
+          <div class="panel-head" data-reveal>
+            <div class="panel-icon-wrap">
+              <div class="panel-icon-fb"><i class="bi bi-bag-heart"></i></div>
+            </div>
+            <div>
+              <h3>Katalog / E-Commerce</h3>
+              <p>Solusi toko online untuk menampilkan katalog produk secara terstruktur dan memudahkan pelanggan
+                melakukan pemesanan melalui sistem yang sederhana dan responsif.</p>
+            </div>
+          </div>
+          <div class="pkgs">
+            <div class="pkg" data-reveal>
+              <span class="pkg-label">Standard</span>
+              <h4>Katalog/E-Commerce Standard</h4>
+              <div class="pkg-price"><strong>Negosiasi</strong></div>
+              <ul class="feat-list">
+                <li><i class="bi bi-check-circle-fill"></i>Desain Clean &amp; Premium (Responsif)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free Hosting 1 Tahun</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free Domain 1 Tahun</li>
+                <li><i class="bi bi-check-circle-fill"></i>5-7 Halaman (Home, About, Product/Katalog, Promo, Contact,
+                  FAQ, Testimonial)</li>
+                <li><i class="bi bi-check-circle-fill"></i>CTA Integrasi WhatsApp Chat</li>
+                <li><i class="bi bi-check-circle-fill"></i>Form Kontak Integrasi WhatsApp Chat</li>
+                <li><i class="bi bi-check-circle-fill"></i>Form Pembelian Integrasi WhatsApp Chat</li>
+                <li><i class="bi bi-check-circle-fill"></i>Google Maps Integrasi</li>
+                <li><i class="bi bi-check-circle-fill"></i>Gambar Product, Harga, Deskripsi Product</li>
+                <li><i class="bi bi-check-circle-fill"></i>Kategori &amp; Filter Product</li>
+                <li><i class="bi bi-check-circle-fill"></i>Source Code 100% Hak Milik</li>
+                <li><i class="bi bi-check-circle-fill"></i>Free SSL</li>
+                <li><i class="bi bi-check-circle-fill"></i>SEO on-page basic</li>
+                <li><i class="bi bi-check-circle-fill"></i>Garansi Maitenance 1 Bulan</li>
+                <li><i class="bi bi-check-circle-fill"></i>Garansi Team Kelola Konten Website (Update Product/Katalog,
+                  Promo, Testimonial)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Terdaftar di Google Search Console</li>
+                <li><i class="bi bi-check-circle-fill"></i>Kecepatan Website (Lazy Load + Caching Tools)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Gratis Revisi Minor (Kecil)</li>
+                <li><i class="bi bi-check-circle-fill"></i>Gratis Revisi Mayor (Unlimited)</li>
+
+                <p class="note-order">
+                  <span class="note-title">Catatan :</span>
+                  Website ini dikembangkan secara custom tanpa menggunakan CMS demi memastikan keamanan dan performa
+                  yang optimal. Seluruh pembaruan konten dikelola langsung oleh developer untuk menjaga kualitas dan
+                  stabilitas sistem.
+                </p>
+              </ul>
+              <a href="https://wa.me/6281389888577?text=Halo%20kak,%20saya%20tertarik%20Katalog%20Online"
+                class="pkg-btn"> Pesan Sekarang <i class="bi bi-arrow-right"></i> </a>
+            </div>
+
+            <!-- COMING SOON PAKET PRO
+              <div class="pkg pkg-featured" data-reveal>
+                <span class="pkg-label popular">Full Store ✦</span>
+                <h4>Toko Online Lengkap</h4>
+                <div class="pkg-price"><strong>Rp 8jt</strong><span>/project</span></div>
+                <ul class="feat-list">
+                  <li><i class="bi bi-check-circle-fill"></i>Keranjang &amp; checkout</li>
+                  <li><i class="bi bi-check-circle-fill"></i>Payment gateway</li>
+                  <li><i class="bi bi-check-circle-fill"></i>Dashboard admin produk</li>
+                  <li><i class="bi bi-check-circle-fill"></i>Manajemen pesanan</li>
+                  <li><i class="bi bi-check-circle-fill"></i>Revisi unlimited</li>
+                  <li><i class="bi bi-check-circle-fill"></i>Selesai 21–30 hari</li>
+                </ul>
+                <a href="https://wa.me/6281234567890?text=Halo%20Richard,%20saya%20tertarik%20Toko%20Online%20Lengkap" class="pkg-btn featured"> Pesan Sekarang <i class="bi bi-arrow-right"></i> </a>
+              </div>
+              -->
+          </div>
+        </div>
+      </div>
+      <!--  -->
+    </div>
+  </section>
+
+  <section class="portfolio-section" id="portfolio">
+    <div class="wrap">
+      <div class="sec-eyebrow center" data-reveal>Portfolio Saya</div>
+      <h2 class="sec-title center" data-reveal>Portfolio</h2>
+      <p class="sec-sub center" data-reveal>Berikut beberapa proyek yang telah saya kerjakan dengan penuh komitmen dan
+        hasil yang terbukti memuaskan.</p>
+
+      <div class="portfolio-grid">
+        <!-- CARD 1 -->
+        <article class="portfolio-card">
+          <div class="portfolio-media">
+            <img src="file:///C:/Kerja%20Richard/Website/Web%20Profil/Thumbnail%20porto.png" loading="lazy"
+              alt="Project Thumbnail" onerror="this.parentElement.classList.add('img-fallback')" />
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="cta">
+    <div class="section-wrap cta-inner">
+      <div class="cta-left" data-reveal>
+        <div class="sec-eyebrow">Kontak Kami</div>
+        <h2 class="cta-h2">
+          Siap punya website<br />
+          yang <em>profesional</em> ?
+        </h2>
+        <p>Mari berdiskusi dengan santai dan tanpa biaya. Bagikan ide Anda, dan saya siap membantu mewujudkannya menjadi
+          nyata!</p>
+        <div class="cta-trust">
+          <div class="ct-item"><i class="bi bi-clock-fill"></i> Balas Cepat/Fast Respons</div>
+          <div class="ct-item"><i class="bi bi-patch-check-fill"></i> Konsultasi Gratis</div>
+          <div class="ct-item"><i class="bi bi-patch-check-fill"></i> Garansi Revisi</div>
+          <div class="ct-item"><i class="bi bi-patch-check-fill"></i> Garansi Team Kelola Website</div>
+          <div class="ct-item"><i class="bi bi-patch-check-fill"></i> Pengerjaan Tepat Waktu</div>
+        </div>
+      </div>
+      <div class="cta-right" data-reveal>
+        <!-- Illustration / image -->
+        <div class="cta-img-wrap">
+          <img src="file:///C:/Kerja%20Richard/Website/Web%20Profil/download.jpeg"
+            alt="Hubungi Rich Enterprise Melalui WhatsApp" class="cta-img" loading="lazy" onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              " />
+        </div>
+        <a href="https://wa.me/6281389888577?text=Halo%20kak,%20saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20layanan%20jasa%20website%20kakak."
+          class="btn-wa" target="_blank"><i class="bi bi-whatsapp"></i> Konsultasi Via WhatsApp </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-wrap footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-name">Rich Enterprise <span class="logo-sep">|</span> <span class="logo-sub">Freelancer
+              Website</span></span>
+        </a>
+        <p>Crafting digital excellence through code. Sebagai Front-End Specialist, saya mentransformasi visi bisnis Anda
+          menjadi desain web yang modern dan responsif untuk hasil yang maksimal.</p>
+        <div class="footer-socials">
+          <a href="#home" class="fsoc"><i class="bi bi-globe"></i></a>
+          <a href="https://www.instagram.com/willyrichard23/" class="fsoc" target="_blank"><i
+              class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/6281389888577?text=Halo%20kak,%20saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20layanan%20jasa%20website%20kakak."
+            class="fsoc" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <div class="fc-title">Navigasi</div>
+        <a href="#home" class="fc-link">Home</a>
+        <a href="#about" class="fc-link">Tentang Saya</a>
+        <a href="#why" class="fc-link">Kenapa</a>
+        <a href="#layanan" class="fc-link">Layanan</a>
+        <a href="#portfolio" class="fc-link">Portfolio</a>
+      </div>
+
+      <div class="footer-col">
+        <div class="fc-title">Layanan</div>
+        <a href="#layanan" class="fc-link" data-goto="landing">Landing Page</a>
+        <a href="#layanan" class="fc-link" data-goto="company">Company Profile</a>
+        <a href="#layanan" class="fc-link" data-goto="travel">Website Travel</a>
+        <a href="#layanan" class="fc-link" data-goto="ecommerce">Katalog / E-Commerce</a>
+      </div>
+
+      <div class="footer-col">
+        <div class="fc-title">Kontak</div>
+        <div class="fc-contact"><i class="bi bi-whatsapp"></i> +62 813 8988 8577</div>
+        <div class="fc-contact"><i class="bi bi-envelope"></i> willyrichard23@gmail.com</div>
+        <div class="fc-contact"><i class="bi bi-geo-alt"></i> Jakarta, Indonesia</div>
+        <div class="fc-contact"><i class="bi bi-clock"></i> 24 Hours</div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="section-wrap footer-btm-inner">
+        <span>© 2025 Rich Enterprise | Freelancer Website. Hak Cipta Dilindungi</span>
+        <span>Website Dibuat Oleh Rich Enterprise</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Welcome Popup -->
+  <div class="custom-popup-overlay" id="welcomeOverlay"></div>
+  <div class="custom-popup" id="welcomePopup">
+    <button class="popup-close" id="closePopupBtn">&times;</button>
+    <div class="popup-content">
+      <h2>Lebih dari Sekadar Membangun, Kami Merawat Website Anda!</h2>
+      <p>Setiap proyek yang kami tangani dikembangkan dengan visi jangka panjang. Kami tidak hanya menyelesaikan urusan
+        teknis, tapi juga menjamin keandalan sistem, kecepatan akses, serta kenyamanan berlancar bagi pengguna Anda.
+      </p>
+      <p>
+        Untuk kebutuhan update konten seperti
+        <strong>Service, Portfolio/Clients, Blog, Product/Katalog, hingga Testimonial</strong>, dikelola oleh Developer
+        Website.
+      </p>
+      <p class="highlight">
+        Kami akan terus mendampingi karena kami yakin sebuah website adalah aset digital yang hidup. Website butuh
+        perawatan, pembaruan, dan optimasi berkala. Dukungan kami tidak terhenti saat perilisan; kami pastikan platform
+        Anda senantiasa relevan dan menghasilkan dampak nyata.
+      </p>
+      <div class="ct-item"><i class="bi bi-clock-fill"></i> Jam Kerja Setiap Hari 24 Hours</div>
+      <br>
+      <a href="https://wa.me/6281389888577?text=Halo%20kak,%20saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20layanan%20jasa%20website%20kakak."
+        class="popup-btn" target="_blank"><i class="bi bi-whatsapp"></i> Konsultasi Gratis Sekarang!</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+  <script src="shader-bg.js"></script>
+
+  <!-- Clean Theme Script Fixes: Cursor & Popup -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Welcome Popup Logic
+      const overlay = document.getElementById("welcomeOverlay");
+      const popup = document.getElementById("welcomePopup");
+      const closeBtn = document.getElementById("closePopupBtn");
+
+      // Show popup with a slight delay
+      setTimeout(() => {
+        if (overlay) overlay.classList.add("active");
+        if (popup) popup.classList.add("active");
+      }, 1000);
+
+      function closePopup() {
+        if (overlay) overlay.classList.remove("active");
+        if (popup) popup.classList.remove("active");
+      }
+
+      if (closeBtn) closeBtn.addEventListener("click", closePopup);
+      if (overlay) overlay.addEventListener("click", closePopup);
+
+      // 2. Clean Custom Cursor Logic
+      const cursor = document.getElementById("cursor");
+      const cursorRing = document.getElementById("cursorRing");
+
+      let mouseX = -100;
+      let mouseY = -100;
+      let ringX = -100;
+      let ringY = -100;
+
+      // Update positions
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        // Ensure cursor wrapper is visible
+        if (cursor) cursor.style.display = "block";
+        if (cursorRing) cursorRing.style.display = "block";
+
+        // Instant following for the dot
+        if (cursor) {
+          cursor.style.left = mouseX + "px";
+          cursor.style.top = mouseY + "px";
+        }
+      });
+
+      // Smooth following for the ring
+      function animateRing() {
+        const dx = mouseX - ringX;
+        const dy = mouseY - ringY;
+
+        // Ease the ring position towards the mouse position
+        ringX += dx * 0.15;
+        ringY += dy * 0.15;
+
+        if (cursorRing) {
+          cursorRing.style.left = ringX + "px";
+          cursorRing.style.top = ringY + "px";
+        }
+
+        requestAnimationFrame(animateRing);
+      }
+      animateRing();
+
+      // Interactions
+      const interactables = document.querySelectorAll("a, button, .pkg, .why-card, .portfolio-card");
+      interactables.forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          if (cursor) {
+            cursor.style.transform = "translate(-50%, -50%) scale(1.5)";
+            cursor.style.background = "var(--accent-2)";
+            cursor.style.boxShadow = "0 0 10px var(--accent-2), 0 0 20px var(--accent-2)";
+          }
+          if (cursorRing) {
+            cursorRing.style.width = "50px";
+            cursorRing.style.height = "50px";
+            cursorRing.style.borderColor = "var(--accent-2)";
+            cursorRing.style.backgroundColor = "rgba(138, 43, 226, 0.05)";
+            cursorRing.style.borderRadius = "50%";
+            cursorRing.style.transform = "translate(-50%, -50%) rotate(135deg)";
+          }
+        });
+        el.addEventListener("mouseleave", () => {
+          if (cursor) {
+            cursor.style.transform = "translate(-50%, -50%) scale(1)";
+            cursor.style.background = "var(--accent)";
+            cursor.style.boxShadow = "0 0 10px var(--accent), 0 0 20px var(--accent)";
+          }
+          if (cursorRing) {
+            cursorRing.style.width = "36px";
+            cursorRing.style.height = "36px";
+            cursorRing.style.borderColor = "var(--accent)";
+            cursorRing.style.backgroundColor = "transparent";
+            cursorRing.style.borderRadius = "4px";
+            cursorRing.style.transform = "translate(-50%, -50%) rotate(45deg)";
+          }
+        });
+      });
+
+      // Hide cursor when leaving window
+      document.addEventListener("mouseleave", () => {
+        if (cursor) cursor.style.display = "none";
+        if (cursorRing) cursorRing.style.display = "none";
+      });
+
+      document.addEventListener("mouseenter", () => {
+        if (overlay && !overlay.classList.contains("active")) {
+          if (cursor) cursor.style.display = "block";
+          if (cursorRing) cursorRing.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -2106,19 +2106,18 @@ button {
         letter-spacing: 0.5px;
     }
 
-    .nav-cta {
-        padding: 6px 10px;
-        font-size: 0.7rem;
-        gap: 4px;
-        margin-left: auto;
-    }
-
     .nav-cta i {
-        font-size: 0.8rem;
+        font-size: 1rem;
+        margin: 0;
     }
 
     .burger {
         margin-left: 4px;
+        padding: 4px;
+    }
+
+    .burger span {
+        width: 22px;
     }
 
     .logo-sub {
@@ -2194,6 +2193,23 @@ button {
 
     .cta-inner {
         gap: 32px;
+    }
+}
+
+@media (max-width: 380px) {
+    .nav-cta {
+        padding: 8px 10px;
+        gap: 0;
+    }
+
+    .nav-cta span,
+    .nav-cta::after {
+        display: none;
+    }
+
+    .nav-cta i {
+        font-size: 1rem;
+        margin: 0;
     }
 }
 

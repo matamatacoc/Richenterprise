@@ -429,12 +429,14 @@ button {
     white-space: nowrap;
     text-transform: uppercase;
     letter-spacing: 1px;
+    will-change: transform, box-shadow;
 }
 
 .nav-cta:hover {
     background: #25d366;
     color: #000;
     box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
+    transform: translateY(-2px);
 }
 
 .burger {
@@ -1951,14 +1953,21 @@ button {
     }
 
     .cursor,
-    .cursor-ring {
-        display: none;
+    .cursor-ring,
+    #bg-canvas {
+        display: none !important;
     }
 
     body,
     button,
     a {
         cursor: auto;
+    }
+
+    /* Disable all heavy CSS on mobile */
+    * {
+        animation-duration: 0s !important;
+        transition-duration: 0.1s !important;
     }
 
     .btn-outline {
@@ -2085,6 +2094,31 @@ button {
 @media (max-width: 480px) {
     :root {
         --spy: 50px;
+    }
+
+    .nav-inner {
+        gap: 8px;
+    }
+
+    .logo-name {
+        font-size: 1.15rem;
+        /* Further reduced for very small screens */
+        letter-spacing: 0.5px;
+    }
+
+    .nav-cta {
+        padding: 6px 10px;
+        font-size: 0.7rem;
+        gap: 4px;
+        margin-left: auto;
+    }
+
+    .nav-cta i {
+        font-size: 0.8rem;
+    }
+
+    .burger {
+        margin-left: 4px;
     }
 
     .logo-sub {

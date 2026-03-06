@@ -1,29 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const canvas = document.getElementById('bg-canvas');
-    if (!canvas) return;
+  const canvas = document.getElementById('bg-canvas');
+  if (!canvas) return;
 
-    // Use the parent section container
-    const container = canvas.parentElement;
+  // Disable WebGL aurora effect on mobile to fix lag
+  if (window.innerWidth <= 768) {
+    canvas.style.display = 'none';
+    return;
+  }
 
-    // Set up Three.js scene
-    const scene = new THREE.Scene();
-    const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+  // Use the parent section container
+  const container = canvas.parentElement;
 
-    // WebGLRenderer with alpha for blending over the existing dark background
-    const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: false });
-    renderer.setPixelRatio(window.devicePixelRatio || 1);
+  // Set up Three.js scene
+  const scene = new THREE.Scene();
+  const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
 
-    // Resize handling
-    function resize() {
-        const width = container.clientWidth;
-        const height = container.clientHeight;
-        renderer.setSize(width, height);
-        if (uniforms) {
-            uniforms.iResolution.value.set(width, height);
-        }
+  // WebGLRenderer with alpha for blending over the existing dark background
+  const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: false });
+  renderer.setPixelRatio(window.devicePixelRatio || 1);
+
+  // Resize handling
+  function resize() {
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+    renderer.setSize(width, height);
+    if (uniforms) {
+      uniforms.iResolution.value.set(width, height);
     }
+  }
 
-    const fragmentShader = `
+  const fragmentShader = `
         uniform float iTime;
         uniform vec2 iResolution;
 
@@ -93,39 +99,39 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     `;
 
-    const vertexShader = `
+  const vertexShader = `
         void main() {
             gl_Position = vec4(position, 1.0);
         }
     `;
 
-    const uniforms = {
-        iTime: { value: 0 },
-        iResolution: { value: new THREE.Vector2() }
-    };
+  const uniforms = {
+    iTime: { value: 0 },
+    iResolution: { value: new THREE.Vector2() }
+  };
 
-    const material = new THREE.ShaderMaterial({
-        fragmentShader,
-        vertexShader,
-        uniforms,
-        transparent: true,
-        // Make sure the neon colors pop out
-        blending: THREE.AdditiveBlending
-    });
+  const material = new THREE.ShaderMaterial({
+    fragmentShader,
+    vertexShader,
+    uniforms,
+    transparent: true,
+    // Make sure the neon colors pop out
+    blending: THREE.AdditiveBlending
+  });
 
-    const plane = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), material);
-    scene.add(plane);
+  const plane = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), material);
+  scene.add(plane);
 
-    window.addEventListener('resize', resize);
-    resize();
+  window.addEventListener('resize', resize);
+  resize();
 
-    const clock = new THREE.Clock();
+  const clock = new THREE.Clock();
 
-    function animate() {
-        requestAnimationFrame(animate);
-        uniforms.iTime.value = clock.getElapsedTime();
-        renderer.render(scene, camera);
-    }
+  function animate() {
+    requestAnimationFrame(animate);
+    uniforms.iTime.value = clock.getElapsedTime();
+    renderer.render(scene, camera);
+  }
 
-    animate();
+  animate();
 });
